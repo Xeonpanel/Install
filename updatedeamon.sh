@@ -18,9 +18,8 @@ then
     sleep 1s
     cd /etc
 	sudo service deamon stop
-	sudo git clone https://github.com/Xeonpanel/Deamon.git temp
-	mv temp/.git deamon/.git
-	rm -rf temp
+	rm -rf deamon
+	sudo git clone https://github.com/Xeonpanel/Deamon.git deamon
 	sudo service deamon start
 else
     echo ""

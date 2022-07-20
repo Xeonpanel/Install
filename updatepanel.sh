@@ -18,9 +18,8 @@ then
     sleep 1s
     cd /etc
 	sudo service xeonpanel stop
-	sudo git clone https://github.com/Xeonpanel/Panel.git temp
-	mv temp/.git xeonpanel/.git
-	rm -rf temp
+	rm -rf panel
+	sudo git clone https://github.com/Xeonpanel/Panel.git deamon
 	sudo service xeonpanel start
 	echo "--> Panel update completed"
 else
