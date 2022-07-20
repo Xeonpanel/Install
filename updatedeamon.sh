@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo "XeonPanel Deamon v0.8 Installation Script"
+echo "XeonPanel Deamon v0.8 Update Script"
 echo "Copyright © 2022 Xeonpanel."
 echo "For support join our community: https://discord.gg/4y9X28Ubxd"
 sleep 1s
