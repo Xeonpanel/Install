@@ -12,6 +12,14 @@ fi
 read -p "Are you sure you want to continue? [y/n] " installation
 if [[ $installation == "y" || $installation == "Y" || $installation == "yes" || $installation == "Yes" ]]
 then
+    clear
+    echo "Installing deamon ( v0.8 )"
+    echo ""
+    sleep 1s	
+	service apache2 stop
+	service apache stop
+    sudo apt update
+    sudo apt-get --ignore-missing install python3 git python3-pip nginx certbot python3-certbot-nginx curl
     sudo apt update
     sudo apt --ignore-missing install git python3 python3-pip docker containerd docker.io
     python3 -m pip install flask flask_sock flask_cors docker waitress

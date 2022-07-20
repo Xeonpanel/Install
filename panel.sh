@@ -16,8 +16,10 @@ then
     echo "Installing panel ( v0.8 )"
     echo ""
     sleep 1s
+	service apache2 stop
+	service apache stop
     sudo apt update
-    sudo apt-get --ignore-missing install python3 git python3-pip nginx certbot python3-certbot-nginx
+    sudo apt-get --ignore-missing install python3 git python3-pip nginx certbot python3-certbot-nginx curl
     cd /etc
     git clone https://github.com/Xeonpanel/Panel.git xeonpanel
     python3 -m pip install flask requests
